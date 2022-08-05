@@ -1,0 +1,23 @@
+.spin-wheel{
+    display: flex;
+    justify-content: center;
+}
+@keyframes rotate {
+    from {
+      transform: rotate();
+    }
+  
+    to {
+      transform: rotate(3600deg);
+    }
+  }
+  
+  
+  .animateFullSpin {
+    animation: rotate 6s;
+    animation-iteration-count: 1;
+  }
+  .wheelimg{
+    height: 450px;
+    width: 450px;
+  }
