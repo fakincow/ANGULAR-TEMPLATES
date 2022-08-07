@@ -1,0 +1,37 @@
+.card-main{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    margin-left: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.normal{
+    background-color: blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.winner{
+    background-color: rgb(0, 160, 40);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.box{
+   
+  
+   
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.wrapper{
+    flex-wrap: wrap;
+    display: inline-flex;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+}

@@ -1,0 +1,11 @@
+<div class="card-main">
+    {{winners}}
+    <div class="wrapper">
+        <div *ngFor="let i of value | keyvalue: sortByValue" class="box">
+          <label [ngClass]="winners.includes(i.value) ? 'winner' : 'normal'">{{i.value}}</label>
+        </div>
+    </div>
+
+
+
+</div>

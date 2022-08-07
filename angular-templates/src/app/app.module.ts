@@ -13,6 +13,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { SpinWheelComponent } from './games/spin-wheel/spin-wheel.component';
 import { WheelRotateComponent } from './games/wheel-rotate/wheel-rotate.component';
+import { BingoComponent } from './games/bingo/bingo.component';
+import { BingoCardComponent } from './games/bingo/bingo-card/bingo-card.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,10 @@ import { WheelRotateComponent } from './games/wheel-rotate/wheel-rotate.componen
     GameComponent,
     HeaderComponent,
     SpinWheelComponent,
-    WheelRotateComponent
+    WheelRotateComponent,
+    BingoComponent,
+    BingoCardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,9 @@ import { WheelRotateComponent } from './games/wheel-rotate/wheel-rotate.componen
     SlickCarouselModule,
     MatProgressBarModule,
     CountToModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
     
   ],
   providers: [],

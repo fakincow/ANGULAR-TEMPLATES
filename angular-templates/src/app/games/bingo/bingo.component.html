@@ -1,0 +1,19 @@
+<div class="bingo-ball" *ngFor="let winBall of winBalls">
+    <label>{{winBall}}</label>
+</div>
+<div class="randomize-div">
+    <label>winBalls: {{winBalls}}</label>  
+    <button (click)="getBall()">GET BALL</button>
+    <button (click)="newGame()">NEW GAME</button>
+    <div class="rolling-ball">
+        <label>33</label>
+    </div>
+
+</div>
+
+
+<div class="bingo-cards">
+    <bingo-card *ngFor="let card of cards" [value]="card" [winners]="winBalls">
+
+    </bingo-card>
+</div>

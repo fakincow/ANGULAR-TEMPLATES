@@ -36,7 +36,7 @@ export class WheelRotateComponent implements OnInit {
     console.log('spin d wheel');
     //this.startButton.style.pointerEvents = 'none';
     // Calculate a new rotation between 5000 and 10 000
-    this.deg = Math.floor(5000 + Math.random() * 5000);
+    this.deg = Math.floor(360 + Math.random() * 2500);
     // Set the transition on the wheel
     this.wheel.style.transition = 'all 10s ease-out';
     // Rotate the wheel

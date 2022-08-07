@@ -1,0 +1,52 @@
+.bingo-cards{
+    width: 930px;
+    height: 100%;
+    padding-left: 5px;
+    flex-wrap: wrap;
+    background-color: grey;
+    display: inline-flex;
+}
+.randomize-div{
+    display: grid;
+    justify-content: center;
+}
+.bingo-ball{
+    background-color: blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+.rolling-ball{
+    background-color: blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    animation: animSpinRight 10s , animSpinRotate 10s;
+    position: absolute;
+}
+@keyframes animSpinRight {
+    from {
+        left: 0px;
+    }
+  
+    to {
+        left: 200px;
+    }
+  
+  }
+  @keyframes animSpinRotate {
+    from {
+        transform: rotate();
+    }
+  
+    to {
+        transform: rotate(3600deg);
+    }
+  
+  }
+
