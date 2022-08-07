@@ -58,17 +58,12 @@ export class BingoComponent implements OnInit {
         this.showRollingBallAnim(newWinBall);
    
       }
-  public rList1: number[] = Array.from({ length: 24 }, () => (Math.floor(Math.random() * 100 + 1)));
-  public rList2: number[] = Array.from({ length: 24 }, () => (Math.floor(Math.random() * 100 + 1)));
-  public rList3: number[] = Array.from({ length: 24 }, () => (Math.floor(Math.random() * 100 + 1)));
-
-
-  public cards = [[...new Set(this.rList1)], [...new Set(this.rList2)], [...new Set(this.rList3)],
-  [...new Set(this.rList1)],
-  [...new Set(this.rList2)],
-  [...new Set(this.rList3)],
-  ];
+  public cards = [];
   ngOnInit(): void {
+    this.cards = [];
+    for(let i=0;i<10;i++){
+      this.cards.push(this.generateRandomTicket());
+    }
   }
 
 }
