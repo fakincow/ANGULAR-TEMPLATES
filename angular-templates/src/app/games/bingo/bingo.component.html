@@ -1,14 +1,17 @@
+<div class="bingo-ball" id="rollDball">
+    <label id="nlabel"></label>
+</div>
 <div class="bingo-ball" *ngFor="let winBall of winBalls">
     <label>{{winBall}}</label>
 </div>
 <div class="randomize-div">
-    <label>winBalls: {{winBalls}}</label>  
+    <div class="win-balls-top" id="win-balls-top">
+        <label>winBalls: {{winBalls}}</label>  
+    </div>
+   
     <button (click)="getBall()">GET BALL</button>
     <button (click)="newGame()">NEW GAME</button>
-    <div class="rolling-ball">
-        <label>33</label>
-    </div>
-
+    
 </div>
 
 

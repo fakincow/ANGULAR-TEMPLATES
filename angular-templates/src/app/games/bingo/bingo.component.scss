@@ -27,6 +27,7 @@
     color: white;
     text-align: center;
     animation: animSpinRight 10s , animSpinRotate 10s;
+    animation-fill-mode: forwards;
     position: absolute;
 }
 @keyframes animSpinRight {
@@ -36,6 +37,16 @@
   
     to {
         left: 200px;
+    }
+  
+  }
+  @keyframes animSpinLeft {
+    from {
+        right: 0px;
+    }
+  
+    to {
+        right: 200px;
     }
   
   }
