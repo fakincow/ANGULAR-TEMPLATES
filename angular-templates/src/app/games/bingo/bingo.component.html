@@ -15,8 +15,8 @@
 </div>
 
 
-<div class="bingo-cards">
-    <bingo-card *ngFor="let card of cards" [value]="card" [winners]="winBalls">
+<div class="bingo-cards" >
+    <bingo-card *ngFor="let card of cards" [value]="card" [winners]="winBalls" (rerenderTicket)="onRerenderTicket($event)">
 
     </bingo-card>
 </div>

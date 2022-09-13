@@ -50,6 +50,9 @@ export class BingoComponent implements OnInit {
 
 
   }
+  onRerenderTicket = (e) =>{
+    console.log('catch event !!!!',e);
+  }
   generateUniqNumber = (currentArray) => {
     let anotherNumber = (Math.floor(Math.random() * 100 + 1));
     while (currentArray.includes(anotherNumber)){
