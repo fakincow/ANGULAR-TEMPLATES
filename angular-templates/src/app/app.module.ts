@@ -18,6 +18,10 @@ import { BingoCardComponent } from './games/bingo/bingo-card/bingo-card.componen
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsComponent } from './forms/forms.component';
+import { DynamicContentComponent } from './dynamic-content/dynamic-content.component';
+import { RxJSComponent } from './rx-js/rx-js.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     WheelRotateComponent,
     BingoComponent,
     BingoCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    FormsComponent,
+    DynamicContentComponent,
+    RxJSComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
