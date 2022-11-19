@@ -1,1 +1,9 @@
-<p>forms works!</p>
+<p class="text-3xl font-bold underline p-10">REACTIVE FORMS</p>
+<nav>
+    <button  class="text-md px-6 py-2 rounded-md bg-green-500 text-indigo-50 font-semibold cursor-pointer ml-5" type="button" (click)="toggleEditor('name')">Name Editor</button>
+    <button  class="text-md px-6 py-2 rounded-md bg-red-500 text-indigo-50 font-semibold cursor-pointer ml-5" type="button" (click)="toggleEditor('profile')">Profile Editor</button>
+  </nav>
+
+<app-name-editor *ngIf="showNameEditor"></app-name-editor>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: "Digitaldream";
     src: local("Digitaldream"), url(./assets/fonts/DigitaldreamFatSkewNarrow.woff) format("truetype");

@@ -22,6 +22,9 @@ import { FormsComponent } from './forms/forms.component';
 import { DynamicContentComponent } from './dynamic-content/dynamic-content.component';
 import { RxJSComponent } from './rx-js/rx-js.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileEditorComponent } from './forms/profile-editor/profile-editor.component';
+import { NameEditorComponent } from './forms/name-editor/name-editor.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { ObservablesComponent } from './observables/observables.component';
     FormsComponent,
     DynamicContentComponent,
     RxJSComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    ProfileEditorComponent,
+    NameEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -50,8 +55,8 @@ import { ObservablesComponent } from './observables/observables.component';
     CountToModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
-    
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
