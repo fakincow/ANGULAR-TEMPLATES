@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-name-editor',
@@ -11,5 +12,9 @@ export class NameEditorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+name = new FormControl('');
 
+updateName(){
+  this.name.setValue('Nancy');
+}
 }

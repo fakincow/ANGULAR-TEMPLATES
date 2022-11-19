@@ -1,1 +1,7 @@
+<div class="bg-black text-white p-2 rounded-md">
 <p>name-editor works!</p>
+<label for="name">Name:</label>
+<input class="text-slate-900" id="name" type="text" [formControl]="name">
+<p>Value: {{name.value}}</p>
+<button type="button" class="text-md px-6 py-2 rounded-md bg-blue-500 text-indigo-50 font-semibold cursor-pointer ml-5"  (click)="updateName()">Update Name</button>
+</div>
