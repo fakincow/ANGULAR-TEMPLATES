@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Validators } from '@angular/forms';
+import { FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-profile-editor',
@@ -8,16 +10,51 @@ import { FormBuilder } from '@angular/forms';
 })
 export class ProfileEditorComponent implements OnInit {
 
-  constructor(private fb:FormBuilder) { }
+  profileForm = this.fb.group({
+    firstName: ['', Validators.required],
+    lastName: [''],
+    address: this.fb.group({
+      street: [''],
+      city: [''],
+      state: [''],
+      zip: ['']
+    }),
+    aliases: this.fb.array([
+      this.fb.control('')
+    ])
+  });
 
-  ngOnInit(): void {
+  get aliases() {
+    return this.profileForm.get('aliases') as FormArray;
   }
-profileForm= this.fb.group({
 
+  constructor(private fb: FormBuilder) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
-})
+  updateProfile() {
+    this.profileForm.patchValue({
+      firstName: 'Nancy',
+      address: {
+        street: '123 Drew Street'
+      }
+    });
+  }
 
-onSubmit(){
-  //
+  addAlias() {
+    this.aliases.push(this.fb.control(''));
+  }
+
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.profileForm.value);
+  }
 }
-}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
