@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class RxJSComponent implements OnInit {
 
   constructor() { }
-
+send(){
+  console.log('send');
+}
   ngOnInit(): void {
   }
 

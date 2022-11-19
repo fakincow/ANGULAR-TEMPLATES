@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-content',
   templateUrl: './dynamic-content.component.html',
@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class DynamicContentComponent implements OnInit {
 
   constructor() { }
-
+  name = new FormControl('');
   ngOnInit(): void {
   }
-
+generate(){
+  console.log('generate');
+}
 }
