@@ -1,4 +1,10 @@
+<div>
 <p>dynamic-content works!</p>
-<input class="text-slate-900" id="name" type="text" [formControl]="name">
-<button  class="text-md px-6 py-2 rounded-md bg-green-500 text-indigo-50 font-semibold cursor-pointer ml-5" type="button" (click)="generate()">GENERATE</button>
-  
+<input class="text-slate-900" id="name" type="text" [formControl]="name" #inputField>
+<button  class="text-md px-6 py-2 rounded-md bg-green-500 text-indigo-50 font-semibold cursor-pointer ml-5" type="button" (click)="generate(inputField.value)">GENERATE</button>
+
+<div id='dynamicContent'>
+
+    DYNAMIC CONTENT GOES HERE
+</div>
+</div>
