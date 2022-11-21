@@ -56,7 +56,8 @@ import { NameEditorComponent } from './forms/name-editor/name-editor.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
